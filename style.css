@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    background-color: black;
+    height: 80px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 80px;
+}
+
+.text-content {
+    display: flex;
+    gap: 20px;
+    
+
+}
+
+.ham {
+    display: none;
+
+}
+
+@media screen and (max-width : 580px) {
+    .text-content {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+    
+}
+@media screen and (max-width : 579px){
+    .text-content{
+        display: block;
+      width: 100%;
+      height: 100vh;
+        position: fixed;
+        top: 107px;
+      right: 0px;
+        text-align: center;
+        transition: all 15s ease;
+        color:black;
+        padding: 10px;
+    
+}
+.text-content :hover{
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+#checkbox:checked ~.text-content{
+    left: 580px;
+}
+
+
+
+}
+#checkbox{
+    display: none;
+}
+
+
+   
